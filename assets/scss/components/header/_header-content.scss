@@ -1,0 +1,27 @@
+.header-content {
+	position: relative;
+	z-index: 1;
+  
+&__container {
+	max-width: 1340px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+  }
+&__title {
+	font-size: 60px;
+	letter-spacing: 4.85px;
+	margin: 0 0 53px;
+	line-height: 1.2em;
+  }
+ &-actions {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+  }
+&-actions {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+  }
+}

@@ -1,0 +1,82 @@
+.skills-item {
+	position: relative;
+	background-color: $color-primary;
+	font-size: 1.125rem;
+	letter-spacing: 0.1em;
+	overflow:hidden;
+  }
+  .skills-item:hover .skill-item__link{
+  color: $color-accent;
+  }
+  .skills-item:hover .skill-item__image {
+	  transform: scale(1.1);
+	  }
+  .skills-item:hover .skills-item__overlay{
+	  opacity: 0.95;
+  }
+  .skills-item:nth-of-type(1) {
+	grid-area: a1;
+  }
+  .skills-item:nth-of-type(2) {
+	grid-area: a2;
+  }
+  .skills-item:nth-of-type(3) {
+	grid-area: a3;
+  }
+  .skills-item:nth-of-type(4) {
+	grid-area: a4;
+  }
+  .skills-item:nth-of-type(5) {
+	grid-area: a5;
+  }
+  .skills-item:nth-of-type(6) {
+	grid-area: a6;
+  }
+  .skills-item:nth-of-type(7) {
+	grid-area: a7;
+  }
+  .skills-item:nth-of-type(8) {
+	grid-area: a8;
+  }
+  .skills-item:nth-of-type(9) {
+	grid-area: a9;
+  }
+  .skills-item__title {
+	text-align: center;
+  }
+  .skills-item__image {
+	position: absolute;
+	inset: 0;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: transform 0.5s;
+  }
+  .skills-item__overlay {
+	position: absolute;
+	inset: 0;
+	background-color: color-primary;
+	opacity: 0.8;
+	transition: opacity 0.5s;
+  }
+  .skills-item__title {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	margin: 0;
+	font-size: 1.25rem;
+	letter-spacing: 0.1em;
+	color: $color-light;
+	font-weight: 700;
+	font-family: $font-main;
+  }
+  .skills-item__link {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	padding: 20;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.5s;
+  }
