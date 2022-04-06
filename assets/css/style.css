@@ -73,14 +73,13 @@ body {
 }
 
 .indicator.active {
-  background-color: rgb(61, 33, 29);
+  background-color: rgb(165, 146, 219);
 }
 .indicator {
   z-index: 999;
   width: 20px;
-  height: 100vhh;
   margin: -40px 8px 0;
-  border: 6px solid rgba(63, 19, 223, 0.2);
+  border: 6px solid rgba(202, 199, 212, 0.2);
   outline: none;
 }
 .control--pause span {
@@ -94,7 +93,7 @@ body {
 .control--pause {
   position: absolute;
   top: 0;
-  bottom:0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,9 +107,9 @@ body {
 .control--pause:hover {
   opacity: 0.8;
   background: linear-gradient(
-	to right,
-	rgba(0, 0, 0, 0.65) 0%,
-	rgba(0, 0, 0, 0) 100%
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 .control--next {
@@ -118,17 +117,17 @@ body {
   width: 10%;
 }
 .control--prev {
-	left: 0;
-	width: 10%;
-  }
+  left: 0;
+  width: 10%;
+}
 .control--pause {
   right: 50%;
 }
-.control--next:active{
-	opacity: 0.8;
-	background: linear-gradient(
-		to left,
-		rgba(0, 0, 0, 0.65) 0%,
-		rgba(0, 0, 0, 0) 100%
-	  );
- }
+.control--next:active {
+  opacity: 0.8;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
