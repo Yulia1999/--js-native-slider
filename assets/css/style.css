@@ -12,7 +12,7 @@ body {
 }
 .slides {
   position: relative;
-  height: 150px;
+  height: 100vh;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -22,11 +22,8 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
-  height: 100%;
   opacity: 0;
   z-index: -999;
-  transition: opacity 1s;
 }
 
 .active {
@@ -34,58 +31,104 @@ body {
   z-index: 0;
 }
 
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
 .slide {
+  width: 100%;
+  height: 100%;
   font-size: 40px;
   padding: 40px;
   box-sizing: border-box;
   background: #333;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .slide:nth-of-type(1) {
-  background: red;
+  background-image: url(/assets/img/Angliya.jpeg);
 }
 
 .slide:nth-of-type(2) {
-  background: orange;
+  background-image: url(/assets/img/nik.jpeg);
 }
 
 .slide:nth-of-type(3) {
-  background: green;
+  background-image: url(/assets/img/sloveniapic1.jpeg);
 }
 
 .slide:nth-of-type(4) {
-  background: blue;
+  background-image: url(/assets/img/Netherlands_Amsterdam_Houses_Evening_Canal_596034_1280x853.jpeg);
 }
 
 .slide:nth-of-type(5) {
-  background: purple;
+  background-image: url(/assets/img/eduard-gordeev-ed-gordeev-gollandiia-gorod-amsterdam-doma-ka.jpeg);
 }
-.carousel {
-  margin: 1em;
-}
-.controls,
+
 .indicators {
-  margin-top: 1em;
   display: flex;
   gap: 1em;
-}
-.control,
-.indicator {
-  background-color: #ccc;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  user-select: none;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
+
 .indicator.active {
-  background-color: tomato;
+  background-color: rgb(61, 33, 29);
 }
+.indicator {
+  z-index: 999;
+  width: 20px;
+  height: 100vhh;
+  margin: -40px 8px 0;
+  border: 6px solid rgba(63, 19, 223, 0.2);
+  outline: none;
+}
+.control--pause span {
+  position: absolute;
+}
+.control--pause {
+  opacity: 0.4;
+}
+.control--prev,
+.control--next,
+.control--pause {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  opacity: 0.2;
+}
+
+.control--prev:active,
+.control--pause:hover {
+  opacity: 0.8;
+  background: linear-gradient(
+	to right,
+	rgba(0, 0, 0, 0.65) 0%,
+	rgba(0, 0, 0, 0) 100%
+  );
+}
+.control--next {
+  right: 0;
+  width: 10%;
+}
+.control--prev {
+	left: 0;
+	width: 10%;
+  }
+.control--pause {
+  right: 50%;
+}
+.control--next:active{
+	opacity: 0.8;
+	background: linear-gradient(
+		to left,
+		rgba(0, 0, 0, 0.65) 0%,
+		rgba(0, 0, 0, 0) 100%
+	  );
+ }

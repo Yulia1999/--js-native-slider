@@ -1,9 +1,11 @@
 // const carousel = new Carousel();
-import swipeCarousel from './advanced-carousel.js';
+import SwipeCarousel from './advanced-carousel.js';
 
 const carousel = new SwipeCarousel({
-containerID: '.slider',
+// containerID: '.slider',
 slideID: '.item',
-interval: 1000
+interval: 3000,
+isPlaying: false
 });
+
 carousel.init();
